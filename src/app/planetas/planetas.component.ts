@@ -17,7 +17,7 @@ export class PlanetasComponent {
 
  ngOnInit(): void {
    this.apiService.getPlanets().subscribe(data =>{
-     this.planets = data.results;
+     this.planets = data.results
    });
  }
  
