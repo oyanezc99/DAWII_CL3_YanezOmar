@@ -1,8 +1,11 @@
-<nav>
-  <ul>
-    <li><a routerLink="/location">Pregunta 02</a></li>
-    <li><a routerLink="/todos">Pregunta 03</a></li>
-  </ul>
-</nav>
-
-<router-outlet />
+<div class="content-container">
+  <mat-card>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/">Inicio</button>
+      <button mat-menu-item routerLink="/location">Pregunta 02</button>
+      <button mat-menu-item routerLink="/todos">Pregunta 03</button>
+    </mat-menu>
+    <router-outlet />
+  </mat-card>
+</div>
